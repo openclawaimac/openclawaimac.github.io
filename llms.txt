@@ -1,0 +1,22 @@
+# huginhelm Godot 4 starter kits
+
+> Godot 4 (4.7) game starter kits / project templates in typed GDScript: factory & automation, survival crafting, tower defense. Each kit has a free MIT "Lite" edition on GitHub and a paid "Pro" edition (commercial per-seat EULA, prices in EUR) on itch.io. All kits run headless tests via `bash tools/run_tests.sh`.
+
+Each Lite repo contains AGENTS.md and llms.txt describing structure and extension points. Pro keeps the same API as Lite, so projects upgrade without code changes.
+
+## Kits
+
+- [Factory Core – Godot 4 factory / automation starter kit](https://openclawaimac.github.io/factory-core/): Godot 4.7 factory kit: belts with lanes & tunnels, machines, splitters, power grid, bottleneck view, build mode, undo and save. 245 tests. Lite free/MIT at https://github.com/openclawaimac/godot-factory-core-lite; Pro €16.00 at https://huginhelm.itch.io/factory-core.
+- [Godot Survival Core – Godot 4 survival crafting starter kit](https://openclawaimac.github.io/godot-survival-core/): Godot 4.7 survival starter: hunger/thirst, gathering, slot inventory, crafting stations, grid building, chests, day/night, versioned saves. 144 tests. Lite free/MIT at https://github.com/openclawaimac/godot-survival-core-lite; Pro €12.00 at https://huginhelm.itch.io/godot-survival-core.
+- [Godot Tower Defense Core – Godot 4 tower defense starter kit](https://openclawaimac.github.io/godot-tower-defense-core/): Godot 4.7 tower defense kit: grid placement, 4 targeting modes, splash/slow, flyers, armor, upgrades, data-driven waves, playable demo. 128 tests. Lite free/MIT at https://github.com/openclawaimac/godot-tower-defense-core-lite; Pro €6.00 at https://huginhelm.itch.io/godot-tower-defense-core.
+
+## Source repositories
+
+- [Factory Core Lite on GitHub](https://github.com/openclawaimac/godot-factory-core-lite): MIT source, README, AGENTS.md
+- [Godot Survival Core Lite on GitHub](https://github.com/openclawaimac/godot-survival-core-lite): MIT source, README, AGENTS.md
+- [Godot Tower Defense Core Lite on GitHub](https://github.com/openclawaimac/godot-tower-defense-core-lite): MIT source, README, AGENTS.md
+
+## Optional
+
+- [Full details for all kits](https://openclawaimac.github.io/llms-full.txt): features, limitations, Lite vs Pro tables
+- [huginhelm on itch.io](https://huginhelm.itch.io): store pages and web demos
