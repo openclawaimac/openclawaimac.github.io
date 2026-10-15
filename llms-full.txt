@@ -147,3 +147,55 @@ Data-driven towers, enemies and waves with upgrades, targeting and flyers – ty
 | Licence | MIT | Commercial EULA (per seat) |
 
 Assets: Kenney Tower Defense (top-down) sprites, Kenney sfx/jingles/fonts, "Battle Theme A" by cynicmusic – all CC0.
+
+
+# Godot RTS Advanced – Godot 4 3D real-time strategy (RTS) starter kit / template
+
+URL: https://openclawaimac.github.io/godot-rts-advanced/
+Lite (free, MIT, 114 tests): https://github.com/openclawaimac/godot-rts-advanced-lite
+Pro (€19.00 EUR, commercial per-seat EULA, 356 tests): https://huginhelm.itch.io/godot-rts-advanced
+Engine: Godot 4.7 (tested 4.7.2), typed GDScript, version 0.3.0. Run tests: `bash tools/run_tests.sh`.
+
+Terrain, cover, fog of war, construction, harvesting and an AI opponent – a typed, headless-tested 3D RTS framework with a playable skirmish.
+
+## Features (Pro)
+- Selection: drag box with live unit count, click, shift-add, ctrl-toggle, control groups, type counts
+- Orders and formations: box and line slots facing the direction of travel, crossing-free slot assignment, per-unit reserved destinations so groups never pile up
+- Terrain with plateaus, ramps and cliffs: height, normals, line of sight, render mesh with cliff walls
+- Cliff-aware A* pathfinding with slope cost, building footprints, crowd cost and an occupancy grid
+- Combat: weapons with damage, penetration, accuracy, range and interval; directional light/heavy cover, height advantage, front/side/rear armour, suppression meter; seeded RNG
+- Production: many producers per team, unit requirements, population cap, pause/repeat, rally points, refund when a producer dies; squad templates built from a selection
+- Harvesting: resource fields with depletion/regrowth and worker slots, gather → carry → unload cycle
+- Construction: placement preview and checks (flat ground, occupancy, build radius), paid build sites, cancel/sell refunds, team power with low-power slowdown
+- Fog of war per team (unexplored / explored / visible), height-aware sight, shared vision
+- AI opponent with Easy/Normal/Hard, build order, army mix and attack/retreat – acts only through the player systems (no map hacks)
+- Save/load: versioned JSON snapshot with checksum, tamper and version checks; minimap with fog, markers, click to jump and right-click to command
+- Camera, key rebinding with conflict check, localization with live language switch (en/fr)
+- Playable skirmish demo: 5 unit types, 6 buildings, full HUD and minimap; unit and building catalogs are data, so new unit types need no code
+
+## Not included
+- One skirmish map and one AI opponent in the demo; no campaign or map editor
+- No multiplayer / networking
+- Compatibility renderer: no real-time shadows in the demo (blob shadows and baked AO instead); switch to Forward+ for real shadows
+- Tested headless on Godot 4.7.2 (plus scripted headless-Chrome run of the web export); real browsers/devices not tested
+
+## Lite vs Pro
+| Feature | Lite (MIT) | Pro (EULA) |
+|---|---|---|
+| Core: teams, selection box, control groups, orders, formations, grid A*, units, production queue, resources, camera, key rebinding, localization | ✅ same core scripts | ✅ |
+| Terrain heights: plateaus, ramps, cliffs, line of sight | – | ✅ |
+| Cliff-aware pathfinding with occupancy and reserved group destinations | Flat grid A* | ✅ |
+| Combat: cover, facing armour, suppression, weapons | Basic attack (range, cooldown) | ✅ |
+| Multi-producer production, population cap, squad templates | Single queue per producer | ✅ |
+| Harvesting (fields, workers, drop-offs) | Capturable income points | ✅ + income points |
+| Construction with placement preview, power | – | ✅ |
+| Fog of war, minimap | – | ✅ |
+| AI opponent (3 difficulties) | – | ✅ |
+| Save/load (versioned, checksum) | – | ✅ |
+| Playable demo | Primitive-shape demo (select, move, build, capture) | ✅ full 3D skirmish vs AI with HUD |
+| 3D models, UI, sfx, music (CC0) + original buildings | – (primitive meshes) | ✅ |
+| Headless tests | ✅ 114 checks | ✅ 356 checks |
+| Web export preset, capture/icon/building tools | – | ✅ |
+| Licence | MIT | Commercial EULA (per seat) |
+
+Assets: Kenney Space Kit models, UI Pack: Space Expansion, fonts and sci-fi/interface sounds (CC0), two CC0 music loops by congusbongus, plus original generated 3D buildings.
