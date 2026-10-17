@@ -6,7 +6,7 @@
 
 URL: https://openclawaimac.github.io/factory-core/
 Lite (free, MIT, 65 tests): https://github.com/openclawaimac/godot-factory-core-lite
-Pro (€16.00 EUR, commercial per-seat EULA, 245 tests): https://huginhelm.itch.io/factory-core
+Pro (€16.00 EUR, commercial per-seat EULA, 249 tests): https://huginhelm.itch.io/factory-core
 Engine: Godot 4.7 (tested 4.7.2), typed GDScript, version 0.5.0. Run tests: `bash tools/run_tests.sh`.
 
 Deterministic, headless-tested belts, machines and power for your Godot 4 automation game.
@@ -48,7 +48,7 @@ Deterministic, headless-tested belts, machines and power for your Godot 4 automa
 | Undo/redo, blueprints | – | ✅ |
 | Playable demo game, camera, ore map, inspector | Minimal debug scene | ✅ |
 | Pixel art, sfx, music (CC0) | – | ✅ |
-| Headless tests | Lite subset | ✅ 245 checks |
+| Headless tests | Lite subset | ✅ 249 checks |
 | Web export preset, build scripts, reskin | – | ✅ |
 | Licence | MIT | Commercial EULA (per seat) |
 
@@ -192,7 +192,7 @@ Terrain, cover, fog of war, construction, harvesting and an AI opponent – a ty
 | Fog of war, minimap | – | ✅ |
 | AI opponent (3 difficulties) | – | ✅ |
 | Save/load (versioned, checksum) | – | ✅ |
-| Playable demo | Primitive-shape demo (select, move, build, capture) | ✅ full 3D skirmish vs AI with HUD |
+| Playable demo | Primitive-shape demo (select, move, produce units, capture) | ✅ full 3D skirmish vs AI with HUD |
 | 3D models, UI, sfx, music (CC0) + original buildings | – (primitive meshes) | ✅ |
 | Headless tests | ✅ 114 checks | ✅ 356 checks |
 | Web export preset, capture/icon/building tools | – | ✅ |
