@@ -199,3 +199,49 @@ Terrain, cover, fog of war, construction, harvesting and an AI opponent – a ty
 | Licence | MIT | Commercial EULA (per seat) |
 
 Assets: Kenney Space Kit models, UI Pack: Space Expansion, fonts and sci-fi/interface sounds (CC0), two CC0 music loops by congusbongus, plus original generated 3D buildings.
+
+
+# Godot Destruction Core – Godot 4 2D destruction, collapse & chain reaction kit
+
+URL: https://openclawaimac.github.io/godot-destruction-core/
+Lite (free, MIT, 76 tests): https://github.com/openclawaimac/godot-destruction-core-lite
+Pro (€16.00 EUR, commercial per-seat EULA, 133 tests): https://huginhelm.itch.io/godot-destruction-core
+Engine: Godot 4.6+ (tested 4.7.2), typed GDScript, version 0.2.1. Run tests: `bash tools/run_tests.sh`.
+
+## Features
+- Destructible cell terrain: integer hit points, resistances, anchors, rubble; circle, rect, line and cell damage with falloff
+- Structural collapse with a resumable support check (no size cap), falling pieces, rubble and crush damage
+- DKStress (Pro): load-based shear and crush failure, budgeted sweeps, analysis-only heat map
+- DKChainReactor (Pro): fuses, merging, per-tick budget, runaway caps, barrels/triggers, explosive materials, one hitstop per chain
+- DKFire (Pro): deterministic spread, burn-out to ash/charcoal, burnt supports collapse, flames ride falling pieces and light barrels
+- DKMaskAdapter (Pro): alpha/palette images to terrain, mask carve stamps, grid to image
+- Debug overlays (Pro): chain graph, stress heat map, "why did this fall?" inspector, frame-budget HUD
+- DKCommandLog (Pro): record and replay to an identical hash with checkpoints, save/load
+- Per-player credit for every blast, collapse, chain and fire; SHA-256 state digest, snapshot/restore
+- Pure typed GDScript, no GDExtension; web builds of both demos
+
+## Not included
+- Cell-based, not per-pixel or rigid-body fracture; pieces do not collide in the air
+- No networking
+- Tested headless on Godot 4.7.2 and in headless Chrome; real browsers/devices not tested
+
+## Lite vs Pro
+| Feature | Lite (MIT) | Pro (EULA) |
+|---|---|---|
+| Cell grid, materials (integer hp, resistances, anchors, rubble), damage shapes with falloff | ✅ | ✅ |
+| Single detonations, budgeted scheduler, signals | ✅ | ✅ |
+| Determinism: integer state, SHA-256 digest, snapshot/restore, per-player instigator credit | ✅ | ✅ |
+| Structural collapse: resumable support check (no size cap), falling pieces, rubble, crush damage | ✅ | ✅ |
+| Debris pool, basic feel (shake, once-per-chain hitstop, reduced motion) | ✅ | ✅ |
+| TileMapLayer renderer, per-chunk merged collision | ✅ | ✅ |
+| Demo UI kit: own pixel font, styled HUD, comic callouts (MIT) | ✅ | ✅ |
+| Chain reactions (`DKChainReactor`): fuses, merging, per-tick budget, runaway caps, barrels/triggers, explosive materials | – | ✅ |
+| Fire (`DKFire`): deterministic spread, burn-out to ash/charcoal, burnt supports collapse, flames light barrels | – | ✅ |
+| Load-based stress (`DKStress`): shear and crush failure, budgeted sweeps, analysis-only heat map | – | ✅ |
+| Image/mask import (`DKMaskAdapter`): alpha or palette images to the grid, mask carve stamps, grid to image | – | ✅ |
+| Debug overlays: chain graph, stress heat map, "why did this fall?" inspector, frame-budget HUD | – | ✅ |
+| Command log and replay (`DKCommandLog`): record, replay to an identical hash, checkpoints, save/load | – | ✅ |
+| Demos | "Collapse" (2 local players) | + "Fire Sale" run-and-gun demo (O = debug overlays) |
+| Web builds (HTML5 export presets) | Collapse | + Fire Sale |
+| Headless tests | 76 | 133 (76 Lite + 57 Pro) |
+| Licence | MIT | Commercial per-seat EULA |
