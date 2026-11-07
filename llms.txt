@@ -1,6 +1,6 @@
 # huginhelm Godot 4 starter kits
 
-> Godot 4 (4.7) game starter kits / project templates in typed GDScript: factory & automation, survival crafting, tower defense, 3D real-time strategy (RTS), 2D destruction. Each kit has a free MIT "Lite" edition on GitHub and a paid "Pro" edition (commercial per-seat EULA, prices in EUR) on itch.io. All kits run headless tests via `bash tools/run_tests.sh`.
+> Godot 4 (4.7) game starter kits / project templates in typed GDScript: factory & automation, survival crafting, tower defense, 3D real-time strategy (RTS), 2D destruction, plus a 2D VFX / particle effects pack. Each kit has a free MIT "Lite" edition on GitHub and a paid "Pro" edition (commercial per-seat EULA, prices in EUR) on itch.io. All kits run headless tests via `bash tools/run_tests.sh`.
 
 Each Lite repo contains AGENTS.md and llms.txt describing structure and extension points. Pro keeps the same API as Lite, so projects upgrade without code changes.
 
@@ -11,6 +11,7 @@ Each Lite repo contains AGENTS.md and llms.txt describing structure and extensio
 - [Godot Tower Defense Core – Godot 4 tower defense starter kit](https://openclawaimac.github.io/godot-tower-defense-core/): Lite (free, MIT, https://github.com/openclawaimac/godot-tower-defense-core-lite): The full TD logic: JSON towers/enemies/waves/map, 4 targeting modes, splash, slow, flyers, armor, upgrades and a 3-wave demo. 54 tests. Pro (€6.00, https://huginhelm.itch.io/godot-tower-defense-core): Godot 4.7 tower defense kit: grid placement, 4 targeting modes, splash/slow, flyers, armor, upgrades, data-driven waves, playable demo. 128 tests.
 - [Godot RTS Advanced – Godot 4 3D real-time strategy (RTS) starter kit](https://openclawaimac.github.io/godot-rts-advanced/): Lite (free, MIT, https://github.com/openclawaimac/godot-rts-advanced-lite): The RTS control layer: box selection, control groups, orders, formations, grid A*, production queue, capturable income points, camera, key rebinding and en/fr localization, with a primitive-shape demo. 114 tests. Pro (€19.00, https://huginhelm.itch.io/godot-rts-advanced): Godot 4.7 3D RTS kit: selection, formations, cliff-aware pathfinding, cover, fog of war, building, harvesting, AI opponent, save/load. 356 tests.
 - [Godot Destruction Core – Godot 4 2D destruction kit](https://openclawaimac.github.io/godot-destruction-core/): Lite (free, MIT, https://github.com/openclawaimac/godot-destruction-core-lite): Destructible cell terrain, damage shapes, single detonations and deterministic structural collapse with falling pieces, rubble and crush damage, plus a two-player demo. 82 tests. Pro (€16.00, https://huginhelm.itch.io/godot-destruction-core): Adds chain reactions, deterministic fire, load-based stress, image/mask import, debug overlays, command log/replay and the Fire Sale demo. 142 tests.
+- [VFX Core 2D for Godot 4 – 2D particle effects / VFX pack](https://openclawaimac.github.io/godot-vfx-core-2d/): Lite (free, MIT, https://github.com/openclawaimac/godot-vfx-core-lite): One-call effect runtime with pooling, particle budget, pixel mode, camera shake and hit-stop, demo browser, Destruction Core hook and 8 effects plus hit_flash (32 presets). Pro (€13.00, https://huginhelm.itch.io/vfx-core-2d-godot-4): 141 procedural 2D effects and 512 presets (explosions, debris, smoke, muzzle flashes, hits, beams, magic, pickups, UI, weather, screen effects), HD or pixel style, hooks for five huginhelm kits. Godot 4.4+.
 
 ## Source repositories
 
@@ -19,6 +20,7 @@ Each Lite repo contains AGENTS.md and llms.txt describing structure and extensio
 - [Godot Tower Defense Core Lite on GitHub](https://github.com/openclawaimac/godot-tower-defense-core-lite): MIT source, README, AGENTS.md
 - [Godot RTS Advanced Lite on GitHub](https://github.com/openclawaimac/godot-rts-advanced-lite): MIT source, README, AGENTS.md
 - [Godot Destruction Core Lite on GitHub](https://github.com/openclawaimac/godot-destruction-core-lite): MIT source, README, AGENTS.md
+- [VFX Core 2D Lite on GitHub](https://github.com/openclawaimac/godot-vfx-core-lite): MIT source, README
 
 ## Optional
 
